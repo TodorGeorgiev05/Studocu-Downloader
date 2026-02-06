@@ -6,7 +6,7 @@ A Python tool to capture documents from Studocu and convert them into clean, sin
 
 ---
 
-## ⚠️ Important Legal Notice
+## Important Legal Notice
 
 **Use this tool responsibly and ethically:**
 
@@ -15,12 +15,13 @@ A Python tool to capture documents from Studocu and convert them into clean, sin
 - Follow Studocu's Terms of Service
 - Use for personal study purposes only
 - Do not redistribute copyrighted material
+- IMPORTANT: If the document is 'premium', and some of the pages are blurred, this script doesn't works!
 
 This tool is provided for educational purposes. The author is not responsible for misuse.
 
 ---
 
-## 🌟 Features
+## Features
 
 - **Automated Screenshot Capture** - Automatically captures all pages from a Studocu document
 - **Manual Verification Support** - Pauses for you to handle login prompts or challenges
@@ -31,7 +32,7 @@ This tool is provided for educational purposes. The author is not responsible fo
 
 ---
 
-## 📋 Prerequisites
+## Prerequisites
 
 - **Windows** (can be adapted for macOS/Linux)
 - **Python 3.8 or newer**
@@ -40,7 +41,7 @@ This tool is provided for educational purposes. The author is not responsible fo
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
@@ -70,7 +71,7 @@ playwright install chromium
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 ### Essential Settings
 
@@ -88,24 +89,8 @@ OUTPUT_PDF = Path("my_document.pdf")    # Final PDF
 CHROME_PATH = Path(r"C:\Program Files\Google\Chrome\Application\chrome.exe")
 ```
 
-### Advanced Options
 
-```python
-# PDF quality
-PDF_DPI = 300                # Higher = better quality, larger file
-
-# Screenshot size
-VIEWPORT_WIDTH = 1225        # Browser width
-VIEWPORT_HEIGHT = 1585       # Browser height
-
-# Header/footer removal (as ratio of page height)
-TOP_CROP_RATIO = 0.08        # Remove top 8%
-BOTTOM_CROP_RATIO = 0.07     # Remove bottom 7%
-```
-
----
-
-## 📖 How It Works
+##  How It Works
 
 ### The Process
 
@@ -149,7 +134,7 @@ Step 3: Processing images and creating PDF...
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Chrome doesn't open
 
@@ -210,7 +195,7 @@ BOTTOM_CROP_RATIO = 0.10   # Crop more from bottom
 
 ---
 
-## 💡 Tips
+## Tips
 
 ### First Time Setup
 
@@ -248,7 +233,7 @@ VIEWPORT_HEIGHT = 1300
 
 ---
 
-## 📁 File Structure
+## File Structure
 
 ```
 studocu-capture/
@@ -268,7 +253,7 @@ studocu-capture/
 
 ---
 
-## 🔒 Privacy
+## Privacy
 
 **What gets stored:**
 - Chrome profile in `USER_DATA_DIR` (local only)
@@ -288,7 +273,7 @@ rm -rf C:\chrome_temp_bot
 
 ---
 
-## ❓ FAQ
+## FAQ
 
 **Q: Is this legal?**  
 A: The tool is legal. Your use must comply with copyright law and Terms of Service.
@@ -297,7 +282,7 @@ A: The tool is legal. Your use must comply with copyright law and Terms of Servi
 A: The script needs to connect to it. Close manually after completion.
 
 **Q: Can I capture 100+ page documents?**  
-A: Yes, but it will take longer and create larger PDFs.
+A: Depends if the document is 'premium'
 
 **Q: Does this work on Mac/Linux?**  
 A: Yes, just update `CHROME_PATH` to your Chrome location.
@@ -310,7 +295,7 @@ A: No, it's specifically designed for Studocu's viewer structure.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions welcome! Please:
 1. Fork the repo
@@ -327,13 +312,13 @@ Ideas:
 
 ---
 
-## 📝 License
+## License
 
 MIT License - See LICENSE file
 
 ---
 
-## ⚖️ Disclaimer
+## Disclaimer
 
 This tool is for educational and personal use only. Users are responsible for:
 - Complying with all applicable laws
